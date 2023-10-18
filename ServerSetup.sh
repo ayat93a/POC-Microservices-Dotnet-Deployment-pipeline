@@ -4,6 +4,7 @@
 # paste the content of this SCRIPT
 # sudo chmod +744 ServerSetup.sh
 # sudo mv ServerSetup.sh /usr/local/bin 
+# type ServerSetup.sh
 # Or
 # nano ~/.bashrc
 # export PATH="$HOME/POC-Deploy-Microservices-Dotnet:$PATH"

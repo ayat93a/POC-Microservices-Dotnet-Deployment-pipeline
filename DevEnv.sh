@@ -91,6 +91,7 @@ if [ ${options["Business"]} -eq 1 ] || [ ${options["release"]} -eq 1 ]; then
     docker-compose -f Dev.yml up -d
 
     echo "Executing additional commands inside the container..."
+    echo "there is a library need a specific font ... Add it from the hosting machine"
     docker exec -it business-dev-business /bin/bash -c "apt-get update && apt-get install -y fontconfig && mkdir -p /usr/share/fonts/truetype/custom" 
     docker stop business-dev-business
     docker cp /usr/share/fonts/truetype/custom business-dev-business:/usr/share/fonts/truetype/custom/
